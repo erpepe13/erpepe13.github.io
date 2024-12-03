@@ -1,0 +1,306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    
+}
+
+.Todo{
+    display: grid;
+    min-height: 125dvh;
+    grid-template-rows:
+        auto lfr auto;
+}
+    
+
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 10px 10%;
+}
+
+.header.logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+/*esto hace que la imagen tenga efecto*/
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #f8fcf7;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color:dimgrey;
+}
+
+.header .btm button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #d1d3d4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btm button:hover{
+    background-color: #7c8183;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/*Foto de index*/
+
+.imagenprincipal {
+    width: fit-content;
+    padding: 10px;
+}
+
+.main{
+    min-height: 100vh;
+}
+
+.presentacion {
+    text-align: right;
+    flex: 1;
+}
+/*enlaces a redes sociales
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦
+↤↤↤↤↤ ⓟ𝓲Ẹ ᗪέ 𝓟𝓐gι𝓝Ａ ↦↦↦↦↦*/
+
+.content{
+    display: absolute;
+    min-height: 150dvh;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+}
+
+.footer{
+    text-align: center;
+      padding: 2rem;
+      background-color: #1b3039;
+
+}
+
+.buttons{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.buttons a{
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #f1f1f1;
+    border-radius: 50%;
+}
+
+.youtube{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.tiktok{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.github{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.instagram{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.correo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+/*Galeria*/
+
+.slider {
+    aspect-ratio: 10 / 16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-type: center;
+}
+
+
+
+
+
+
+
+
+
+/*Sobremi comienza desde aqui*/
+.futbolfoto {
+    left: 40%;
+    width: 300px;
+    position: relative;
+}
+
+.futbolfoto img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fotomotos {
+    left: 35%;
+    aspect-ratio: 10 / 16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.fotomotos img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+
+
+
+
+
+
+/*Aqui empieza la pagina de juegos*/
+.bo2{
+    background: url(../Imagenes/bo2negro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla {
+    width: 30%;
+    left: 70px;
+    color: white; 
+    border-radius: 19px;
+    overflow: hidden; 
+    background-color: rgba(27, 27, 24, 0.8);
+    margin-top: 90px;
+    margin-right: 33px ;
+}
+
+.tabla thead th {
+    background-color: rgba(50, 50, 50, 0.9); 
+    padding: 30px;
+    text-align: center;
+}
+
+.tablae tbody th, 
+.tablae tbody td {
+    padding: 15px;
+    border: 1px solid rgba(114, 9, 156, 0.5);
+    text-align: center;
+}
+
+.tabla tbody tr:first-child {
+    background-color: rgba(90, 66, 97, 0.9);
+}
+
+/*Trabajooooo*/
+.trabajo {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+
+.mapa{
+    left: 50%;
+}
